@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-rectifications = 50
+rectifications = 1000
 frequency =37
 Ttime  = 1000
 
