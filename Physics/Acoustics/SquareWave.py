@@ -1,9 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 
-
-rectifications =200
+rectifications =1000
 frequency =37
 Ttime  = 1000
 
@@ -17,7 +15,8 @@ for i in range(1,rectifications+1,2):
     else:
         for i in range(len(amps)):
             amps[i]+=a[i]
-amps /= int(rectifications/2)
-
+plt.title("Square Wave With frequency of 37Hz")
+plt.xlabel("Time "+ r'$\rightarrow$')
+plt.ylabel("Amplitude "+ r'$\rightarrow$')
 plt.plot(t,amps)
 plt.show()
